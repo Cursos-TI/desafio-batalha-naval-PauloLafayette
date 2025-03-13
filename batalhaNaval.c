@@ -5,7 +5,7 @@
 // Siga os comentários para implementar cada parte do desafio.
 int main() {
    
-    
+// declaracao de matrizes, arrays e variaveis
     int tabuleiro[10][10] = {
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
@@ -25,45 +25,22 @@ int main() {
         {3},
         {3}
     };
-    
+    int i = 1;
 
-    for(int i = 0; i < 1; i++){
-        printf("%d %d %d %d %d %d %d %d %d %d\n", tabuleiro[0][0],barco1[0],barco1[1],barco1[2],tabuleiro[0][5],tabuleiro[0][6],tabuleiro[0][7],tabuleiro[0][8],tabuleiro[0][9],tabuleiro[0][10]);
-        
-    };
-    for(int i = 0; i < 6;i++){
-        printf("%d %d %d %d %d %d %d %d %d %d\n",tabuleiro [1][i],tabuleiro [1][i],tabuleiro [1][i],tabuleiro [1][i],tabuleiro [1][i],tabuleiro [1][i],tabuleiro [1][i],tabuleiro [1][i],tabuleiro [1][i],tabuleiro [1][i]);
-        
+    for(int i = 0; i<1;i++){
+        while(i<=5){
+            printf("%d %d %d %d %d %d %d %d %d %d\n",tabuleiro[i][0],tabuleiro[i][1],tabuleiro[i][2],tabuleiro[i][3],tabuleiro[i][4],tabuleiro[i][5],tabuleiro[i][6],tabuleiro[i][7],tabuleiro[i][8],tabuleiro[i][9]);
+            i++;    
+        };
+        printf("%d %d %d %d %d %d %d %d %d %d\n", barco1[0],barco1[1],barco1[2], tabuleiro[0][3], tabuleiro[0][4], tabuleiro[0][5], tabuleiro[0][6], tabuleiro[0][7], tabuleiro[0][8],tabuleiro[0][9]);
     }
-    for(int i = 0; i< 3;i++){
-        printf("%d %d %d %d %d %d %d %d %d %d\n", tabuleiro[2][i],tabuleiro[2][i],tabuleiro[2][i],tabuleiro[2][i],barco2[0],tabuleiro[2][i],tabuleiro[2][i],tabuleiro[2][i],tabuleiro[2][i],tabuleiro[2][i]);
+    for(int i = 7,j = 0; i<10, j<=2;i++,j++){
+        printf("%d %d %d %d %d %d %d %d %d %d\n",tabuleiro[i][0],tabuleiro[i][1],tabuleiro[i][2],tabuleiro[i][3],tabuleiro[i][4],barco2[j],tabuleiro[i][6],tabuleiro[i][7],tabuleiro[i][8],tabuleiro[i][9] );
     }
-   
+    printf("\nPosição dos navios:\n1-Navio horizontal:[6][0], [6][1], [6][2] \n2-Navio vertical: [7][5], [8][5], [9][5]\n");
     return 0;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
